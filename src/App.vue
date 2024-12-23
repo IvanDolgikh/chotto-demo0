@@ -3,6 +3,7 @@
 
     <div class="float1">
       <FloatFeedChatApp
+        class="float1"
         :auth-provider="authProvider"
         :data-provider="dataProvider"
         :index="0"
@@ -13,7 +14,7 @@
 
     <div class="float2">
       <FloatFeedChatApp
-        class="float2"
+        class="float1"
         :auth-provider="authProvider"
         :data-provider="dataProvider"
         :index="1"
@@ -94,13 +95,15 @@ const dataProvider = {
 
 .float1 {
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
 }
 
 .float2 {
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   right: 50%;
 }
 </style>
